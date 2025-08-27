@@ -1,0 +1,169 @@
+/* ==========================
+   Contenedor de Tarea
+========================== */
+.li-task {
+    display: flex;
+    align-items: center;           /* Alinea verticalmente */
+    margin: 20px auto 0;           /* Centrado horizontal y margen superior */
+    padding: 5px;
+    max-width: 400px;
+    gap: 20px;
+    border-radius: 10px;
+    border: 1px solid #fff;
+    background-color: #1d2329;
+    white-space: normal;           /* Permite saltos de línea */
+    word-wrap: break-word;
+}
+
+/* ==========================
+   Títulos
+========================== */
+.title,
+.title-edit {
+    font-size: 20px;
+    color: #fff;
+    background-color: transparent;
+    text-align: center;
+    border: none;
+    outline:none;
+    
+}
+
+.title-edit:read-only {
+    all: unset;
+    border-bottom: 1px solid #fff;
+    font-size: 20px;
+    color: #fff;
+}
+
+/* ==========================
+   Botones de Edit
+========================== */
+.buton-edit {
+    all: unset;
+    background-color: rgba(131, 131, 131, 0.38);
+    border-radius: 10px;
+    padding: 4px 6px;
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.buton-edit:active{
+    animation: pop 0.3s ease;
+}
+
+#delete:hover{
+    background-color: rgba(255, 64, 64, 0.862);
+}
+
+#edit:hover{
+    background-color: rgb(70, 70, 255);
+}
+
+.buton:active{
+    animation: pop 0.3s ease;
+}
+/* ==========================
+Checkboxes
+========================== */
+.checkbox {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    border-radius: 10px;
+}
+
+
+/* ==========================
+   Botones Generales
+========================== */
+.buton {
+    all: unset;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 3px 5px;
+    background-color: transparent;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.buton:hover {
+    background-color: rgba(131, 131, 131, 0.38);
+}
+
+.buton:active {
+    background-color: #cecfcf;
+    color: #1d2329;
+}
+
+/* ==========================
+   Elementos pequeños
+========================== */
+#span {
+    margin: auto;
+    width: 15px;
+    background-color: transparent;
+}
+
+.checkbox-wrapper {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-family: sans-serif;
+  user-select: none;
+}
+
+/* Ocultar el checkbox original */
+.checkbox-wrapper input {
+  display: none;
+}
+
+/* El cuadrado del checkbox */
+.checkmark {
+  width: 17px;
+  height: 17px;
+  border: 2px solid #ffffff;
+  border-radius: 6px;
+  display: inline-block;
+  position: relative;
+  transition: all 0.3s ease;
+  margin-left: 5px;
+}
+
+/* Cuando está marcado → fondo verde */
+.checkbox-wrapper input:checked + .checkmark {
+  background-color: #4CAF50;
+  border-color: #4CAF50;
+  animation: pop 0.3s ease;
+}
+
+/* Dibujar el ✔ con ::after */
+.checkmark::after {
+  content: "";
+  position: absolute;
+  left: 3px;
+  top: 0,5px;
+  width: 5px;
+  height: 9px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+/* Mostrar el ✔ solo si está checked */
+.checkbox-wrapper input:checked + .checkmark::after {
+  opacity: 1;
+}
+
+/* Animación pequeña al marcar */
+@keyframes pop {
+  0% { transform: scale(0.8); }
+  60% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
+

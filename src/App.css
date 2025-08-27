@@ -1,0 +1,104 @@
+
+.header{
+    
+    display: flex;
+    justify-content: center; /* centra horizontalmente todo el contenido */
+    align-items: center;     /* centra verticalmente el contenido dentro del header */
+    gap: 10px;               /* separa un poco el h2 y el span */
+    height: 100px;
+    text-align: center;
+}
+
+body{
+    background-color: #1c2329;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.tema-noche{
+    background-color: #0e1215;
+}
+
+.tema-dia{
+    background-color: transparent;
+    all: unset;
+}
+
+#tema-icon{
+    width: 30px;
+}
+
+
+.seccion{
+    margin-left: 6%;
+    display: flex;
+    justify-content: center;
+    margin:auto;
+    align-items: center;
+}
+
+
+    .input{
+        all: unset;
+        padding: 10px;
+        text-align: center;
+        border-radius: 10px;
+        background-color: #0e1215;
+        border: 1px solid whitesmoke;
+        width: 285px;
+    }
+
+
+    .boton-enviar{
+        all: unset;
+        padding: 10px;
+        background-color: #1c2329;
+        border-radius: 10px;
+        color: whitesmoke;
+        border: 1px solid whitesmoke;
+    }
+
+    .boton-enviar:hover {
+        background-color: rgba(151, 151, 151, 0.383);
+        border-radius: 10px;
+        padding: 10px;
+        cursor: pointer;
+    }
+
+    .boton-enviar:active{
+        animation: pop 0.3s ease;
+    }
+
+
+    .formulario{
+        display: flex;
+        gap: 10px;
+    }
+
+    .boton-tema{
+        display: flex;
+        justify-content: center;
+        background-color: transparent;
+        all: unset;
+        width: 40px;
+        margin: 0px;
+    }
+
+.Lista-tareas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: ;
+    
+}
+
+.ul-task{
+    width: 600px;
+}
+
+.Lista-tareas li{
+    word-break: break-word;
+    white-space: normal;
+}
