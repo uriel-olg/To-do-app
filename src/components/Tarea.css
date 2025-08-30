@@ -6,7 +6,7 @@
     align-items: center;           /* Alinea verticalmente */
     margin: 20px auto 0;           /* Centrado horizontal y margen superior */
     padding: 5px;
-    max-width: 400px;
+    max-width: 80vh;
     gap: 20px;
     border-radius: 10px;
     border: 1px solid #fff;
@@ -50,7 +50,11 @@
 }
 
 .buton-edit:active{
-    animation: pop 0.3s ease;
+  animation: pop 0.3s ease;
+}
+
+.buton-edit:hover{
+  background-color:#4CAF50 ;
 }
 
 #delete:hover{

@@ -27,7 +27,7 @@ function App() {
           placeholder='Enter a new task' 
           value={Texto}
           onChange={(e)=> setTexto(e.target.value)} 
-          className='input'/>
+          className='input-task'/>
           <button className='boton-enviar' type='submit'>Add Task</button>
         </form>
       </section>

@@ -1,24 +1,19 @@
 
-.header{
-    
-    display: flex;
-    justify-content: center; /* centra horizontalmente todo el contenido */
-    align-items: center;     /* centra verticalmente el contenido dentro del header */
-    gap: 10px;               /* separa un poco el h2 y el span */
-    height: 100px;
-    text-align: center;
-}
-
 body{
     background-color: #1c2329;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
     height: 100vh;
 }
 
-.tema-noche{
-    background-color: #0e1215;
+
+.header{
+    position: fixed;
+    top: 10vh;
+    left: 50vh;
+    display: flex;
+    gap: 10px;
 }
 
 .tema-dia{
@@ -32,33 +27,39 @@ body{
 
 
 .seccion{
-    margin-left: 6%;
+    position: fixed;
+    top: 27vh;
+    left: 0vh; 
     display: flex;
     justify-content: center;
     margin:auto;
     align-items: center;
+    width: 100%;
 }
 
 
-    .input{
-        all: unset;
-        padding: 10px;
-        text-align: center;
-        border-radius: 10px;
-        background-color: #0e1215;
-        border: 1px solid whitesmoke;
-        width: 285px;
-    }
+.input-task{
+    all: unset;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #0e1215;
+    height: 40%;
+    width: 60vh
+}
 
 
-    .boton-enviar{
-        all: unset;
-        padding: 10px;
-        background-color: #1c2329;
-        border-radius: 10px;
-        color: whitesmoke;
-        border: 1px solid whitesmoke;
-    }
+.boton-enviar{
+    all: unset;
+    padding: 10px;
+    background-color: #1c2329;
+    border-radius: 10px;
+    color: whitesmoke;
+    border: 1px solid whitesmoke;
+    height: 100%;
+    width: 30%;
+    text-align: center;
+}
 
     .boton-enviar:hover {
         background-color: rgba(151, 151, 151, 0.383);
@@ -87,15 +88,21 @@ body{
     }
 
 .Lista-tareas{
-    display: flex;
+    display: block;
     justify-content: center;
     align-items: center;
-    height: ;
-    
+    width: 100vh;
+    height: 55vh;        /* altura fija */
+    overflow-y: auto;     /* scroll vertical cuando el contenido excede */
+    overflow-x: hidden;
+    margin-top: 35vh;
 }
 
+.Lista-tareas::-webkit-scrollbar {
+  display: none;        /* Chrome, Safari */
+}
 .ul-task{
-    width: 600px;
+    display: block;
 }
 
 .Lista-tareas li{
