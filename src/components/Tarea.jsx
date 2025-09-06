@@ -36,8 +36,8 @@ const Tarea = ({id,task,check,onToggle}) => {
                 </label>
 
                 <p className="title">{task}</p>
-                <button className="buton" id="edit" onClick={()=> setEdit(true)}><img src="src/media/editar.png" id="span"/></button>
-                <button className="buton" id="delete" onClick={()=> deleteTask(id)}><img src="src/media/basura.png" id="span"/></button>
+                <button className="buton" id="edit" onClick={()=> setEdit(true)}><img src="To-do-app/public/media/edit" id="span"/></button>
+                <button className="buton" id="delete" onClick={()=> deleteTask(id)}><img src="To-do-app/public/media/basura.png" id="span"/></button>
                 </>
             )}
         </li>
