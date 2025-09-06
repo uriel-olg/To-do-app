@@ -2,17 +2,17 @@
    Contenedor de Tarea
 ========================== */
 .li-task {
-    display: flex;
-    align-items: center;           /* Alinea verticalmente */
-    margin: 20px auto 0;           /* Centrado horizontal y margen superior */
-    padding: 5px;
-    max-width: 80vh;
-    gap: 20px;
-    border-radius: 10px;
-    border: 1px solid #fff;
-    background-color: #1d2329;
-    white-space: normal;           /* Permite saltos de línea */
-    word-wrap: break-word;
+  display: flex;
+  align-items: center;           /* Alinea verticalmente */
+  margin: 20px auto 0;           /* Centrado horizontal y margen superior */
+  padding: 5px;
+  max-width: 100vh;
+  gap: 20px;
+  border-radius: 10px;
+  border: 1px solid #fff;
+  background-color: #1d2329;
+  white-space: normal;           /* Permite saltos de línea */
+  word-wrap: break-word;
 }
 
 /* ==========================
@@ -25,8 +25,7 @@
     background-color: transparent;
     text-align: center;
     border: none;
-    outline:none;
-    
+    outline: none;
 }
 
 .title-edit:read-only {
@@ -49,27 +48,28 @@
     transition: all 0.2s ease;
 }
 
-.buton-edit:active{
-  animation: pop 0.3s ease;
+.buton-edit:active {
+    animation: pop 0.3s ease;
 }
 
-.buton-edit:hover{
-  background-color:#4CAF50 ;
+.buton-edit:hover {
+    background-color: #4CAF50;
 }
 
-#delete:hover{
+#delete:hover {
     background-color: rgba(255, 64, 64, 0.862);
 }
 
-#edit:hover{
+#edit:hover {
     background-color: rgb(70, 70, 255);
 }
 
-.buton:active{
+.buton:active {
     animation: pop 0.3s ease;
 }
+
 /* ==========================
-Checkboxes
+   Checkboxes
 ========================== */
 .checkbox {
     display: flex;
@@ -77,7 +77,6 @@ Checkboxes
     margin-left: 10px;
     border-radius: 10px;
 }
-
 
 /* ==========================
    Botones Generales
@@ -112,62 +111,65 @@ Checkboxes
     background-color: transparent;
 }
 
+/* ==========================
+   Checkbox personalizado
+========================== */
 .checkbox-wrapper {
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-  font-family: sans-serif;
-  user-select: none;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-family: sans-serif;
+    user-select: none;
 }
 
 /* Ocultar el checkbox original */
 .checkbox-wrapper input {
-  display: none;
+    display: none;
 }
 
 /* El cuadrado del checkbox */
 .checkmark {
-  width: 17px;
-  height: 17px;
-  border: 2px solid #ffffff;
-  border-radius: 6px;
-  display: inline-block;
-  position: relative;
-  transition: all 0.3s ease;
-  margin-left: 5px;
+    width: 17px;
+    height: 17px;
+    border: 2px solid #ffffff;
+    border-radius: 6px;
+    display: inline-block;
+    position: relative;
+    transition: all 0.3s ease;
+    margin-left: 5px;
 }
 
 /* Cuando está marcado → fondo verde */
 .checkbox-wrapper input:checked + .checkmark {
-  background-color: #4CAF50;
-  border-color: #4CAF50;
-  animation: pop 0.3s ease;
+    background-color: #4CAF50;
+    border-color: #4CAF50;
+    animation: pop 0.3s ease;
 }
 
 /* Dibujar el ✔ con ::after */
 .checkmark::after {
-  content: "";
-  position: absolute;
-  left: 3px;
-  top: 0,5px;
-  width: 5px;
-  height: 9px;
-  border: solid white;
-  border-width: 0 3px 3px 0;
-  transform: rotate(45deg);
-  opacity: 0;
-  transition: opacity 0.2s ease;
+    content: "";
+    position: absolute;
+    left: 3px;
+    top: 0.5px;
+    width: 5px;
+    height: 9px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+    opacity: 0;
+    transition: opacity 0.2s ease;
 }
 
 /* Mostrar el ✔ solo si está checked */
 .checkbox-wrapper input:checked + .checkmark::after {
-  opacity: 1;
+    opacity: 1;
 }
 
 /* Animación pequeña al marcar */
 @keyframes pop {
-  0% { transform: scale(0.8); }
-  60% { transform: scale(1.2); }
-  100% { transform: scale(1); }
+    0% { transform: scale(0.8); }
+    60% { transform: scale(1.2); }
+    100% { transform: scale(1); }
 }
 

@@ -1,5 +1,5 @@
-
-body{
+/* --- Estilos generales --- */
+body {
     background-color: #1c2329;
     display: flex;
     flex-direction: column;
@@ -7,49 +7,51 @@ body{
     height: 100vh;
 }
 
-
-.header{
+/* --- Header --- */
+.header {
     position: fixed;
     top: 10vh;
-    left: 50vh;
+    left: 50%;
+    transform: translateX(-50%);
     display: flex;
-    gap: 10px;
+    gap: 20px;
 }
 
-.tema-dia{
+/* --- Tema Día --- */
+.tema-dia {
     background-color: transparent;
     all: unset;
 }
 
-#tema-icon{
+#tema-icon {
     width: 30px;
 }
 
-
-.seccion{
+/* --- Sección principal --- */
+.seccion {
     position: fixed;
     top: 27vh;
-    left: 0vh; 
+    left: 0vh;
     display: flex;
     justify-content: center;
-    margin:auto;
     align-items: center;
     width: 100%;
+    margin: auto;
 }
 
-
-.input-task{
+/* --- Input de tareas --- */
+.input-task {
     all: unset;
     padding: 10px;
     text-align: center;
     border-radius: 10px;
     background-color: #0e1215;
     height: 40%;
-    width: 60vh
+    width: 60vh;
 }
 
-
-.boton-enviar{
+/* --- Botón enviar --- */
+.boton-enviar {
     all: unset;
     padding: 10px;
     background-color: #1c2329;
@@ -61,51 +63,55 @@ body{
     text-align: center;
 }
 
-    .boton-enviar:hover {
-        background-color: rgba(151, 151, 151, 0.383);
-        border-radius: 10px;
-        padding: 10px;
-        cursor: pointer;
-    }
+.boton-enviar:hover {
+    background-color: rgba(151, 151, 151, 0.383);
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
 
-    .boton-enviar:active{
-        animation: pop 0.3s ease;
-    }
+.boton-enviar:active {
+    animation: pop 0.3s ease;
+}
 
+/* --- Formulario --- */
+.formulario {
+    display: flex;
+    width: 100vh;
+    gap: 10px;
+}
 
-    .formulario{
-        display: flex;
-        gap: 10px;
-    }
+/* --- Botón tema --- */
+.boton-tema {
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+    all: unset;
+    width: 40px;
+    margin: 0px;
+}
 
-    .boton-tema{
-        display: flex;
-        justify-content: center;
-        background-color: transparent;
-        all: unset;
-        width: 40px;
-        margin: 0px;
-    }
-
-.Lista-tareas{
+/* --- Lista de tareas --- */
+.Lista-tareas {
     display: block;
     justify-content: center;
     align-items: center;
     width: 100vh;
-    height: 55vh;        /* altura fija */
-    overflow-y: auto;     /* scroll vertical cuando el contenido excede */
+    height: 55vh;
+    overflow-y: auto;
     overflow-x: hidden;
     margin-top: 35vh;
 }
 
 .Lista-tareas::-webkit-scrollbar {
-  display: none;        /* Chrome, Safari */
+    display: none;
 }
-.ul-task{
+
+.ul-task {
     display: block;
 }
 
-.Lista-tareas li{
+.Lista-tareas li {
     word-break: break-word;
     white-space: normal;
 }

@@ -28,7 +28,8 @@ function App() {
           value={Texto}
           onChange={(e)=> setTexto(e.target.value)} 
           className='input-task'/>
-          <button className='boton-enviar' type='submit'>Add Task</button>
+          <button className='boton-enviar' type='submit'
+          >Add Task</button>
         </form>
       </section>
 
