@@ -115,3 +115,96 @@ body {
     word-break: break-word;
     white-space: normal;
 }
+
+
+@media (max-width: 600px) {
+  body {
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    min-width: 100vw;
+    box-sizing: border-box;
+  }
+
+  .header {
+    top: 2vh;
+    left: 50%;
+    transform: translateX(-50%);
+    flex-direction: row;
+    gap: 20px;
+    width: 95vw;
+    font-size: 1.1rem;
+    justify-content: center;
+  }
+  
+
+  .Titulo {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .seccion {
+    top: 10vh;
+    left: 0;
+    width: 100vw;
+    flex-direction: row;
+    padding: 0 2vw;
+  }
+
+  .formulario {
+    flex-direction: row;
+    justify-content: center;
+    justify-items: center;
+    width: 80vw;
+
+
+  }
+
+  .input-task {
+    width: 60vw;
+    font-size: 1rem;
+    min-width: 0;
+  }
+
+  .boton-enviar {
+    width: 40%;
+    font-size: 1rem;
+    padding: 10px 0;
+  }
+
+  .Lista-tareas {
+    width: 98vw;
+    margin-top: 18vh;
+    height: 60vh;
+    padding: 0 1vw;
+  }
+
+  .ul-task {
+    width: 100%;
+  }
+
+  .li-task {
+    flex-direction: column;
+    max-width: 98vw;
+    gap: 10px;
+    padding: 8px 0;
+  }
+
+  .title, .title-edit {
+    font-size: 1rem;
+    word-break: break-word;
+    text-align: center;
+  }
+
+  .boton, .buton-edit, .boton-tema {
+    width: 100%;
+    font-size: 1rem;
+    margin: 4px 0;
+    justify-content: center;
+  }
+
+  #tema-icon, #span {
+    width: 24px;
+    height: 24px;
+  }
+}

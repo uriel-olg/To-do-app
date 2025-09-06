@@ -173,3 +173,59 @@
     100% { transform: scale(1); }
 }
 
+/* Mobiles */
+
+@media (max-width: 600px) {
+  .li-task {
+    flex-direction: row;
+    align-items: center;
+    max-width: 80vw;
+    gap: 12px;
+    padding: 10px 6px;
+    margin: 12px auto 0;
+    border-radius: 10px;
+    box-sizing: border-box;
+  }
+
+  .title,
+  .title-edit,
+  .title-edit:read-only {
+    font-size: 1rem;
+    text-align: center;
+    padding: 4px 0;
+    word-break: break-word;
+    width: 100vw;
+  }
+
+  .buton,
+  .buton-edit {
+    width: 40%;
+    font-size: 1rem;
+    margin: 4px 0;
+    padding: 8px 0;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #span {
+    width: 22px;
+    height: 22px;
+  }
+
+  .checkbox-wrapper {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    font-size: 1rem;
+    margin-left: 2px;
+  }
+
+  .checkmark {
+    width: 22px;
+    height: 22px;
+    margin-left: 0;
+    border-radius: 6px;
+  }
+}
