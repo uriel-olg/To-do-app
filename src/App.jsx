@@ -17,7 +17,7 @@ function App() {
       <header className='header'>
         <h2 className='Titulo'>Lista de tareas</h2>
         <button onClick={toggleCheck} className= {Tema ? "tema-noche" : "tema-dia"}>
-          <img src="To-do-app/public/media/notasB.png" id='tema-icon'/>
+          <img src="/media/notasB.png" id='tema-icon'/>
         </button>
       </header>
 
